@@ -3,7 +3,7 @@ set -ex
 export DEBIAN_FRONTEND=noninteractive
 apt-get update && apt-get install -y tzdata
 gem install bundler -v 2.0.1
-apt-get install cmake
+apt-get install -y cmake
 # install
 bundle install --without guard --deployment
 # before_script
